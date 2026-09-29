@@ -39,6 +39,15 @@ function queue() {
   timer = setInterval(() => show(current + 1), 5000);
 }
 
+document.querySelector("[data-prev]").addEventListener("click", () => {
+  show(current - 1);
+  queue();
+});
+document.querySelector("[data-next]").addEventListener("click", () => {
+  show(current + 1);
+  queue();
+});
+
 const dots = document.querySelector("[data-dots]");
 slides.forEach((_, index) => {
   const dot = document.createElement("span");
