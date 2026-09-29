@@ -41,8 +41,17 @@ button, .btn, .cv { font-family: var(--sans); }
   align-items: center;
   justify-content: space-between;
   padding: 1.1rem 4vw;
-  background: linear-gradient(#070707, rgba(7, 7, 7, 0));
+  background: #070707;
 }
+.nav-links { display: flex; gap: 1.2rem; }
+.nav-links a {
+  text-decoration: none;
+  color: #f3f0ea;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.nav-links a:hover { color: var(--gold); }
 .mark {
   width: 2.5rem;
   height: 2.5rem;
@@ -241,7 +250,7 @@ button, .btn, .cv { font-family: var(--sans); }
 .tags li { border: 1px solid var(--line); padding: 0.25rem 0.55rem; color: var(--muted); font-size: 0.82rem; }
 .shot {
   margin: 0;
-  background: #fff;
+  background: #070707;
   border: 1px solid rgba(216, 199, 174, 0.8);
   min-height: 16rem;
   overflow: hidden;
@@ -251,7 +260,7 @@ button, .btn, .cv { font-family: var(--sans); }
   height: 22rem;
   object-fit: contain;
   object-position: center;
-  background: #f6f1e8;
+  background: #070707;
 }
 .shot-plain {
   display: grid;
@@ -322,6 +331,8 @@ button, .btn, .cv { font-family: var(--sans); }
 @media (max-width: 640px) {
   .progress { display: none; }
   .nav { padding-inline: 0.85rem; }
+  .nav-links { gap: 0.65rem; }
+  .nav-links a { font-size: 0.65rem; letter-spacing: 0.06em; }
   .cv { padding: 0.45rem 0.6rem; letter-spacing: 0.04em; }
   .orb { width: min(260px, 70vw); }
   .actions { flex-direction: column; align-items: stretch; }
