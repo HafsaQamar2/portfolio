@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#f3efe6"/>
+  <rect x="2" y="2" width="60" height="60" fill="none" stroke="#1b2420" stroke-width="3"/>
+  <text x="32" y="42" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#0f5c52">HQ</text>
+</svg>

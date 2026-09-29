@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hifsa Qamar — CV</title>
+  <style>
+    @page { size: A4; margin: 11mm 12mm; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", Calibri, sans-serif;
+      color: #1b2420;
+      font-size: 10.4pt;
+      line-height: 1.38;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 2px solid #0f5c52;
+      padding-bottom: 8px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 22pt;
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    .role { margin: 3px 0 0; color: #0f5c52; font-weight: 600; }
+    .meta { margin: 0; text-align: right; color: #3d4742; font-size: 9.4pt; line-height: 1.45; }
+    a { color: inherit; text-decoration: none; }
+    h2 {
+      margin: 11px 0 4px;
+      font-size: 10.5pt;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #0f5c52;
+      border-bottom: 1px solid #d9d3c6;
+      padding-bottom: 2px;
+    }
+    p { margin: 0 0 4px; }
+    .summary { margin-top: 8px; }
+    .split { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 18px; }
+    .item { margin: 0 0 6px; }
+    .item strong { font-weight: 650; }
+    .when { float: right; color: #5d675f; font-weight: 500; }
+    ul { margin: 2px 0 6px; padding-left: 16px; }
+    li { margin: 0 0 2px; }
+    .skills p { margin: 0 0 2px; }
+    .certs { margin: 0; padding-left: 16px; columns: 2; column-gap: 18px; }
+    .certs li { break-inside: avoid; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Hifsa Qamar</h1>
+      <p class="role">Full-Stack Developer · BS Computer Science</p>
+    </div>
+    <p class="meta">
+      Lahore, Pakistan<br>
+      0304-4913330<br>
+      hafsaqamar171@gmail.com<br>
+      linkedin.com/in/hifsa-qamar2<br>
+      github.com/HafsaQamar2
+    </p>
+  </header>
+
+  <p class="summary">BS Computer Science student at Superior University (CGPA 3.69) who ships full-stack web apps and machine learning tools. Built PayNexus, a live invoice and payroll platform on Next.js, and a customer-churn model deployed on Hugging Face. Founded a self-funded academy and has taught mathematics to 250+ students.</p>
+
+  <div class="split">
+    <section>
+      <h2>Education</h2>
+      <p class="item"><strong>BS Computer Science</strong> <span class="when">2024 — present</span><br>Superior University, Lahore · CGPA 3.69 · Merit scholarship</p>
+      <p class="item"><strong>FSc Pre-Engineering</strong> <span class="when">2022 — 2024</span><br>Punjab Group of Colleges, Raiwind</p>
+    </section>
+    <section class="skills">
+      <h2>Skills</h2>
+      <p><strong>Languages.</strong> JavaScript, Python, PHP, C++, SQL, HTML, CSS</p>
+      <p><strong>Web.</strong> React, Next.js, Tailwind CSS, Bootstrap, Prisma</p>
+      <p><strong>Data.</strong> scikit-learn, pandas, NumPy, Matplotlib, Gradio</p>
+      <p><strong>Tools.</strong> MySQL, Git, Vercel, Hugging Face, VS Code, XAMPP</p>
+      <p><strong>Practice.</strong> Agile, Scrum, UML, SRS, system design</p>
+    </section>
+  </div>
+
+  <h2>Experience</h2>
+  <p class="item"><strong>Founder and lead educator</strong>, self-founded academy <span class="when">2023 — present</span></p>
+  <ul>
+    <li>Designed mathematics curricula for 250+ learners online and in person, with a pass rate above 90%.</li>
+    <li>Ran teaching, scheduling, and progress tracking independently, with no external funding.</li>
+  </ul>
+  <p class="item"><strong>Mathematics mentor</strong>, independent / Zoom <span class="when">2022 — present</span></p>
+  <ul>
+    <li>Handled onboarding, lessons, and assessment for multiple cohorts, with structured feedback.</li>
+  </ul>
+
+  <h2>Projects</h2>
+  <p class="item"><strong>PayNexus</strong> — <a href="https://github.com/HafsaQamar2/Paynexus">github.com/HafsaQamar2/Paynexus</a> — Next.js, React, Tailwind, Prisma, MySQL, JWT<br>
+  Invoice and payroll app: branded invoices, PDF export, employees, payroll runs, salary slips, and a no-signup demo. Live at paynexus-topaz.vercel.app</p>
+  <p class="item"><strong>Telco Customer Churn Predictor</strong> — <a href="https://github.com/HafsaQamar2/telco-customer-churn-predictor">github.com/HafsaQamar2/telco-customer-churn-predictor</a> — Python, scikit-learn, Gradio<br>
+  Scores whether a telecom customer is likely to leave using a saved Random Forest and its label encoders. Cross-validation reached 85%+ accuracy. Live on Hugging Face Spaces.</p>
+  <p class="item"><strong>BookVault</strong> — <a href="https://github.com/HafsaQamar2/Elibrary-Management-System">github.com/HafsaQamar2/Elibrary-Management-System</a> — PHP, MySQL, JavaScript, Bootstrap<br>
+  E-library for Superior University with admin catalogue, student portal, loans, configurable fines, and in-browser PDF reading.</p>
+  <p class="item"><strong>Other builds.</strong> Sales analysis dashboard (Python, Hugging Face). AeroTrack, a C++ flight system. StockSense, an inventory tracker using linked lists, stacks, and queues. FrostyBites storefront. An LDR night-light circuit and an ultrasonic obstacle-avoiding robot car.</p>
+
+  <h2>Certifications</h2>
+  <ul class="certs">
+    <li>Meta Front-End Developer — Meta, Coursera</li>
+    <li>Machine Learning Specialization — DeepLearning.AI, Coursera</li>
+    <li>Python for Everybody — University of Michigan, Coursera</li>
+    <li>Google Data Analytics — Google, Coursera</li>
+  </ul>
+</body>
+</html>
