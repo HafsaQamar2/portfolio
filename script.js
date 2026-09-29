@@ -76,6 +76,24 @@ window.addEventListener("resize", place);
 setProgress();
 window.addEventListener("scroll", setProgress, { passive: true });
 
+const notes = [...document.querySelectorAll("[data-notes] article")];
+let noteAt = 0;
+
+function showNotes() {
+  notes.forEach((card, index) => {
+    const second = (noteAt + 1) % notes.length;
+    card.classList.toggle("is-on", index === noteAt || index === second);
+  });
+}
+
+showNotes();
+if (!reduceMotion) {
+  setInterval(() => {
+    noteAt = (noteAt + 1) % notes.length;
+    showNotes();
+  }, 4500);
+}
+
 document.querySelectorAll(".shot img").forEach((image) => {
   image.addEventListener("error", () => {
     const figure = image.closest(".shot");
