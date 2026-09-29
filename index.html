@@ -4,134 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hifsa Qamar | Full-Stack Developer</title>
-  <meta name="description" content="Hifsa Qamar is a full-stack developer and BS Computer Science student in Lahore. She builds web apps with React, Next.js, and PHP, and machine learning tools with Python.">
-  <meta property="og:title" content="Hifsa Qamar | Full-Stack Developer">
-  <meta property="og:description" content="Portfolio of Hifsa Qamar — web apps, machine learning projects, and teaching. Based in Lahore.">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Hifsa Qamar is a full-stack developer in Lahore. She builds web apps with Next.js and PHP, and machine learning tools with Python.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
-
   <header class="nav">
-    <a class="brand" href="#top">Hifsa Qamar</a>
-    <div class="nav-tools">
-      <span class="progress" data-progress>0%</span>
-      <a class="mark" href="#top" aria-label="Back to top">HQ</a>
-      <a class="cv" href="Hifsa_Qamar_CV.pdf" download><span class="cv-long">Download CV</span><span class="cv-short">CV</span></a>
-    </div>
-    <span class="nav-line" data-line></span>
+    <a class="mark" href="#top" aria-label="Back to top">HQ</a>
+    <span class="progress" data-progress>0%</span>
+    <a class="cv" href="Hifsa_Qamar_CV.pdf" download>Download CV</a>
   </header>
 
   <main id="content">
     <section class="hero" id="top">
-      <p class="eyebrow">Lahore, Pakistan · Superior University</p>
-      <h1>
-        <span>I'm a</span>
-        <em>Full-Stack</em>
-        <span>Developer</span>
-      </h1>
-      <p class="lede">I build web products with React, Next.js, and PHP, and machine learning tools with Python. Currently studying computer science and open to internships.</p>
-      <div class="actions">
-        <a class="btn btn-fill" href="#work">Explore portfolio</a>
-        <a class="btn btn-line" href="#contact">Contact me</a>
+      <div class="hero-copy">
+        <h1>I'm a <em>Full Stack</em><br>Developer</h1>
+        <p class="eyebrow">AI / Web</p>
+        <p class="lede">Building web products and machine learning tools with React, Next.js, PHP, and Python. Based in Lahore.</p>
+        <div class="actions">
+          <a class="btn btn-fill" href="#work">Explore portfolio</a>
+          <a class="btn btn-line" href="#contact">Contact me</a>
+        </div>
+      </div>
+      <div class="orb" aria-hidden="false">
+        <span class="ring"></span>
+        <img src="assets/portrait.png" alt="Hifsa Qamar, wearing glasses and a black scarf.">
       </div>
     </section>
 
     <section class="about" id="about">
-      <figure class="portrait">
-        <img src="assets/hifsa.jpg" alt="Hifsa Qamar at a technology event in Lahore, wearing a teal hijab and glasses.">
-      </figure>
-      <div class="about-copy">
-        <p class="kicker">About me</p>
-        <h2>I like software that ships, and explanations that stay clear.</h2>
-        <p>My degree is BS Computer Science at Superior University, Lahore, with a CGPA of 3.69. The work I want people to open is live: PayNexus is a Next.js invoicing and payroll app, the churn predictor is a scikit-learn model on Hugging Face, and BookVault is a PHP and MySQL library system.</p>
-        <p>Outside class I founded a small academy and have taught mathematics to more than 250 students, online and in person. Teaching is why I write interfaces and READMEs as if someone else has to use them tomorrow.</p>
-        <dl class="stats">
-          <div>
-            <dt>CGPA</dt>
-            <dd>3.69</dd>
-          </div>
-          <div>
-            <dt>Students taught</dt>
-            <dd>250+</dd>
-          </div>
-          <div>
-            <dt>Based in</dt>
-            <dd>Lahore</dd>
-          </div>
-        </dl>
+      <p class="kicker">About me</p>
+      <div class="about-grid">
+        <h2>I study computer science and ship things people can open.</h2>
+        <div>
+          <p>I am a BS Computer Science student at Superior University, Lahore, with a CGPA of 3.69. PayNexus is a Next.js invoicing and payroll app. The churn predictor is a scikit-learn model on Hugging Face. BookVault is a PHP and MySQL library for the university.</p>
+          <p>Outside class I founded a small academy and have taught mathematics to more than 250 students. I like a clear screen, a consistent database, and a link that actually loads.</p>
+          <dl class="stats">
+            <div><dt>CGPA</dt><dd>3.69</dd></div>
+            <div><dt>Students taught</dt><dd>250+</dd></div>
+            <div><dt>Based in</dt><dd>Lahore</dd></div>
+          </dl>
+        </div>
       </div>
-    </section>
-
-    <section class="experience" id="experience">
-      <p class="kicker">Experience</p>
-      <article class="role">
-        <header>
-          <h2>Founder and lead educator</h2>
-          <p>Self-founded academy · 2023 — present</p>
-        </header>
-        <p>Designed mathematics curricula for 250+ learners and ran teaching, scheduling, and progress tracking without external funding. Students in the program have kept a pass rate above 90%.</p>
-      </article>
-      <article class="role">
-        <header>
-          <h2>Mathematics mentor</h2>
-          <p>Independent, Zoom and in person · 2022 — present</p>
-        </header>
-        <p>Teach cohorts from onboarding through assessment, with structured problem sets and direct feedback.</p>
-      </article>
     </section>
 
     <section class="skills" id="skills">
       <p class="kicker">Skills</p>
-      <h2>What I actually use</h2>
       <div class="skill-grid">
         <div>
           <h3>Languages</h3>
           <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>PHP</li>
-            <li>C++</li>
-            <li>SQL</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
+            <li>JavaScript</li><li>Python</li><li>PHP</li><li>C++</li><li>SQL</li><li>HTML5</li><li>CSS3</li>
           </ul>
         </div>
         <div>
           <h3>Frameworks</h3>
           <ul>
-            <li>React</li>
-            <li>Next.js</li>
-            <li>Tailwind CSS</li>
-            <li>Bootstrap</li>
-            <li>Prisma</li>
-            <li>Gradio</li>
+            <li>React</li><li>Next.js</li><li>Tailwind CSS</li><li>Bootstrap</li><li>Prisma</li><li>Gradio</li>
           </ul>
         </div>
         <div>
           <h3>AI and data</h3>
           <ul>
-            <li>scikit-learn</li>
-            <li>pandas</li>
-            <li>NumPy</li>
-            <li>Matplotlib</li>
-            <li>Random Forest</li>
+            <li>scikit-learn</li><li>pandas</li><li>NumPy</li><li>Matplotlib</li><li>Random Forest</li>
           </ul>
         </div>
         <div>
-          <h3>Databases and tools</h3>
+          <h3>Tools</h3>
           <ul>
-            <li>MySQL</li>
-            <li>Git and GitHub</li>
-            <li>Vercel</li>
-            <li>Hugging Face</li>
-            <li>VS Code</li>
-            <li>XAMPP</li>
+            <li>MySQL</li><li>Git</li><li>GitHub</li><li>Vercel</li><li>Hugging Face</li><li>VS Code</li>
           </ul>
         </div>
       </div>
@@ -139,78 +84,58 @@
 
     <section class="work" id="work">
       <div class="work-head">
-        <div>
-          <p class="kicker">Project-based experience</p>
-          <h2>Selected work</h2>
-        </div>
-        <p class="counter" aria-live="polite"><span data-index>01</span> <span class="slash">/</span> <span data-total>03</span></p>
+        <p class="kicker">Project-based experience</p>
+        <p class="counter"><span data-index>01</span> / <span data-total>03</span></p>
       </div>
-
       <div class="stage" data-stage>
         <article class="project is-active">
-          <p class="project-no">01</p>
-          <h3>PayNexus</h3>
-          <p>An invoicing and payroll platform for small businesses. It handles branded invoices with PDF export, clients, employees, monthly payroll, salary slips, and sign-in with JWT. A live demo creates a private sandbox company so the product can be clicked through without an account. Built for a smart invoice and payroll brief, with Next.js, Tailwind, Prisma, and MySQL.</p>
-          <ul class="tags">
-            <li>Next.js</li>
-            <li>React</li>
-            <li>Tailwind</li>
-            <li>Prisma</li>
-            <li>MySQL</li>
-          </ul>
-          <div class="links">
-            <a href="https://paynexus-topaz.vercel.app" target="_blank" rel="noopener">Live demo</a>
-            <a href="https://github.com/HafsaQamar2/Paynexus" target="_blank" rel="noopener">GitHub</a>
+          <div class="project-copy">
+            <p class="project-no">01</p>
+            <h3>PayNexus</h3>
+            <p>An invoicing and payroll platform for small businesses. Branded invoices, PDF export, clients, employees, monthly payroll, salary slips, and JWT sign-in. A live demo creates a private sandbox company. Built with a team of three during a full-stack hackathon, then deployed on Vercel.</p>
+            <ul class="tags"><li>Next.js</li><li>React</li><li>Tailwind</li><li>Prisma</li><li>MySQL</li></ul>
+            <div class="links">
+              <a href="https://paynexus-topaz.vercel.app" target="_blank" rel="noopener">Live demo</a>
+              <a href="https://github.com/HafsaQamar2/Paynexus" target="_blank" rel="noopener">GitHub</a>
+            </div>
           </div>
+          <figure class="shot">
+            <img src="assets/paynexus.png" alt="PayNexus live app">
+          </figure>
         </article>
-
         <article class="project">
-          <p class="project-no">02</p>
-          <h3>Telco Customer Churn Predictor</h3>
-          <p>A Gradio app that estimates whether a telecom customer is likely to leave. It loads a saved scikit-learn Random Forest and the label encoders from training, then returns a stay-or-leave result with a probability. The training pipeline, with feature engineering and cross-validation, reached 85%+ accuracy.</p>
-          <ul class="tags">
-            <li>Python</li>
-            <li>scikit-learn</li>
-            <li>Gradio</li>
-            <li>pandas</li>
-          </ul>
-          <div class="links">
-            <a href="https://hafsaqamar001-hhafsadsproject.hf.space/" target="_blank" rel="noopener">Live app</a>
-            <a href="https://github.com/HafsaQamar2/telco-customer-churn-predictor" target="_blank" rel="noopener">GitHub</a>
+          <div class="project-copy">
+            <p class="project-no">02</p>
+            <h3>Telco Customer Churn Predictor</h3>
+            <p>A Gradio app that estimates whether a telecom customer is likely to leave. It loads a saved Random Forest and the label encoders from training, then returns a stay-or-leave result with a probability. Cross-validation reached 85%+ accuracy.</p>
+            <ul class="tags"><li>Python</li><li>scikit-learn</li><li>Gradio</li><li>pandas</li></ul>
+            <div class="links">
+              <a href="https://hafsaqamar001-hhafsadsproject.hf.space/" target="_blank" rel="noopener">Live app</a>
+              <a href="https://github.com/HafsaQamar2/telco-customer-churn-predictor" target="_blank" rel="noopener">GitHub</a>
+            </div>
           </div>
+          <figure class="shot">
+            <img src="assets/churn.png" alt="Churn predictor live app">
+          </figure>
         </article>
-
         <article class="project">
-          <p class="project-no">03</p>
-          <h3>BookVault</h3>
-          <p>A PHP and MySQL e-library for Superior University. Admins manage the catalogue, authors, loans, and fines. Students search the collection, read PDFs in the browser, and track what they borrowed. Overdue fines follow a configurable daily rate, and the database schema is normalized.</p>
-          <ul class="tags">
-            <li>PHP</li>
-            <li>MySQL</li>
-            <li>JavaScript</li>
-            <li>Bootstrap</li>
-          </ul>
-          <div class="links">
-            <a href="https://github.com/HafsaQamar2/Elibrary-Management-System" target="_blank" rel="noopener">GitHub</a>
+          <div class="project-copy">
+            <p class="project-no">03</p>
+            <h3>BookVault</h3>
+            <p>A PHP and MySQL e-library for Superior University. Admins manage the catalogue, authors, loans, and fines. Students search the collection, read PDFs in the browser, and track what they borrowed.</p>
+            <ul class="tags"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>Bootstrap</li></ul>
+            <div class="links">
+              <a href="https://github.com/HafsaQamar2/Elibrary-Management-System" target="_blank" rel="noopener">GitHub</a>
+            </div>
           </div>
+          <figure class="shot shot-plain">
+            <p>Superior University e-library</p>
+          </figure>
         </article>
       </div>
-
       <div class="pager">
         <button type="button" data-prev>Previous</button>
         <button type="button" data-next>Next</button>
-      </div>
-
-      <div class="also">
-        <h3>Also built</h3>
-        <ul>
-          <li><strong>Sales analysis dashboard</strong> — Python analytics on superstore data, hosted on Hugging Face.</li>
-          <li><strong>AeroTrack</strong> — C++ flight booking system using inheritance and polymorphism.</li>
-          <li><strong>StockSense</strong> — inventory tracker with linked lists, stacks, and queues.</li>
-          <li><strong>FrostyBites</strong> — responsive storefront in HTML, CSS, and JavaScript.</li>
-          <li><strong>NightSense and a robot car</strong> — an LDR auto-light circuit, and an ultrasonic obstacle-avoiding car.</li>
-        </ul>
-        <a class="text-link" href="https://github.com/HafsaQamar2" target="_blank" rel="noopener">View GitHub profile</a>
       </div>
     </section>
 
@@ -223,19 +148,38 @@
         </li>
         <li>
           <h2>I can explain the system</h2>
-          <p>Four years of teaching means I describe a schema, a model, or a screen in plain language, then go back and tighten the code.</p>
+          <p>Years of teaching mean I can describe a schema, a model, or a screen in plain language, then go back and tighten the code.</p>
         </li>
         <li>
           <h2>I keep the data honest</h2>
-          <p>BookVault uses a normalized MySQL schema. The churn app stores the model and the encoders together so a new row is scored the same way it was trained.</p>
+          <p>BookVault uses a normalized MySQL schema. The churn app keeps the model and the encoders together so a new row is scored the same way it was trained.</p>
         </li>
       </ol>
+    </section>
+
+    <section class="notes" id="notes">
+      <p class="kicker">Comments</p>
+      <h2>Notes on the work</h2>
+      <p class="placeholder-label">Dummy comments for now. Send the real ones and I will replace these.</p>
+      <div class="note-grid">
+        <article>
+          <span class="logo">01</span>
+          <p>Dummy comment. This card is a placeholder for a note left on a project post.</p>
+        </article>
+        <article>
+          <span class="logo">02</span>
+          <p>Dummy comment. This card is a placeholder for a second note.</p>
+        </article>
+        <article>
+          <span class="logo">03</span>
+          <p>Dummy comment. This card is a placeholder for a third note.</p>
+        </article>
+      </div>
     </section>
 
     <section class="contact" id="contact">
       <p class="kicker">Get in touch</p>
       <h2>Tell me what you are building.</h2>
-      <p class="contact-lead">I am in Lahore and easiest to reach by email or LinkedIn.</p>
       <div class="contact-links">
         <a href="mailto:hafsaqamar171@gmail.com">hafsaqamar171@gmail.com</a>
         <a href="https://www.linkedin.com/in/hifsa-qamar2" target="_blank" rel="noopener">LinkedIn</a>
@@ -249,7 +193,6 @@
     <p>Hifsa Qamar · Lahore</p>
     <a href="Hifsa_Qamar_CV.pdf" download>Download CV</a>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
