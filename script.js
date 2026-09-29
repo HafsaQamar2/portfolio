@@ -14,36 +14,37 @@ function setProgress() {
   progress.textContent = Math.round(amount * 100) + "%";
 }
 
+function place() {
+  const width = stage.getBoundingClientRect().width;
+  slides.forEach((slide) => {
+    slide.style.flexBasis = width + "px";
+    slide.style.width = width + "px";
+  });
+  track.style.transform = `translateX(-${current * width}px)`;
+}
+
 function show(next) {
   current = (next + slides.length) % slides.length;
-  track.style.transform = `translateX(-${current * 100}%)`;
+  place();
   indexEl.textContent = String(current + 1).padStart(2, "0");
   totalEl.textContent = String(slides.length).padStart(2, "0");
+  dots.querySelectorAll(".dot").forEach((dot, index) => {
+    dot.classList.toggle("is-on", index === current);
+  });
 }
 
 function queue() {
   clearInterval(timer);
   if (reduceMotion) return;
-  timer = setInterval(() => show(current + 1), 6500);
+  timer = setInterval(() => show(current + 1), 5000);
 }
 
-document.querySelector("[data-prev]").addEventListener("click", () => {
-  show(current - 1);
-  queue();
-});
-document.querySelector("[data-next]").addEventListener("click", () => {
-  show(current + 1);
-  queue();
-});
-document.addEventListener("keydown", (event) => {
-  if (event.key === "ArrowRight") {
-    show(current + 1);
-    queue();
-  }
-  if (event.key === "ArrowLeft") {
-    show(current - 1);
-    queue();
-  }
+const dots = document.querySelector("[data-dots]");
+slides.forEach((_, index) => {
+  const dot = document.createElement("span");
+  dot.className = "dot";
+  dots.appendChild(dot);
+  void index;
 });
 
 let touchStart = 0;
@@ -62,6 +63,7 @@ stage.addEventListener("mouseleave", queue);
 
 show(0);
 queue();
+window.addEventListener("resize", place);
 setProgress();
 window.addEventListener("scroll", setProgress, { passive: true });
 
